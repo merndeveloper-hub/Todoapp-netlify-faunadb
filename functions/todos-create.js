@@ -4,16 +4,13 @@
 const faunadb = require('faunadb')
 const q = faunadb.query
 
-const FAUNADB_SERVER_SECRET = fnAEIJ3qWYACDeqf4CvmHud_LLGvhGGeMzcuvCW7
-
-set FAUNADB_SERVER_SECRET=fnAEIJ3qWYACDeqf4CvmHud_LLGvhGGeMzcuvCW7
 
 
 /* export our lambda function as named "handler" export */
 exports.handler = async (event, context) => {
   /* configure faunaDB Client with our secret */
   const client = new faunadb.Client({
-    secret: process.env.FAUNADB_SERVER_SECRET
+    secret: `fnAEIJ3qWYACDeqf4CvmHud_LLGvhGGeMzcuvCW7`
   })  
   /* parse the string body into a useable JS object */
   const data = JSON.parse(event.body)

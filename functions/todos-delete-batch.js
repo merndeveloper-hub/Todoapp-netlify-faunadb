@@ -2,10 +2,13 @@
 const faunadb = require('faunadb')
 const q = faunadb.query
 
+
+
 exports.handler = async (event, context) => {
   /* configure faunaDB Client with our secret */
+
   const client = new faunadb.Client({
-    secret: process.env.FAUNADB_SERVER_SECRET
+    secret: `fnAEIJ3qWYACDeqf4CvmHud_LLGvhGGeMzcuvCW7`
   }) 
   const data = JSON.parse(event.body)
   console.log('data', data)

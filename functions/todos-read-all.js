@@ -7,7 +7,7 @@ exports.handler = (event, context) => {
   console.log('Function `todo-read-all` invoked')
   /* configure faunaDB Client with our secret */
   const client = new faunadb.Client({
-    secret: process.env.FAUNADB_SERVER_SECRET
+    secret: `fnAEIJ3qWYACDeqf4CvmHud_LLGvhGGeMzcuvCW7`
   }) 
   return client.query(q.Paginate(q.Match(q.Ref('indexes/all_todos'))))
     .then((response) => {
