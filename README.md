@@ -1,4 +1,5 @@
 # Netlify + FaunaDB &nbsp;&nbsp;&nbsp;<a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/netlify-faunadb-example&stack=fauna"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
+![Screenshot 2023-04-26 225552](https://user-images.githubusercontent.com/67875982/234663876-15a82c96-66d6-4e6f-ba7e-f02be8141a4a.png)
 
 Example of using [FaunaDB](https://fauna.com/) with [Netlify functions](https://www.netlify.com/docs/functions/)
 
